@@ -1,0 +1,5 @@
+# Arduino-Serial-Monitor-in-Windows-Application-Form-and-SQL-Integration
+
+I made the serial monitor in C# Windows Application form with the help of "Rupava Baruah" youtube video. His Repository link is (https://github.com/rupava/Arduino-and-Windows-Application.git). I made some chnages in his code to store the data of Serial Monitor in SQL Server. In my changes, Serial Monitor data is extracted according to the number sensors data and then this sensor data is stored into the "Arduino having columns (RowNumber, Sensor1, Sensor2)" table of "MyTestDB.
+In this code I have used only two sensors output which is separated by "," and then this is stored in the DB. My code will detect the text in the RichTextBox by observing the separation by “,”. 
+Max number of thirty rows can be added to avoid extra memory consumption. After thirty entries, the Program will start deleting the topmost entries and start adding the entry in the bottom simultaneously. Moreover, the rownumber will keep increasing by one to keep the track of no. of packets received.  
